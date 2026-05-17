@@ -30,8 +30,11 @@ dependencies {
     implementation("io.micrometer:micrometer-registry-prometheus")
     implementation("io.micrometer:micrometer-tracing-bridge-otel")
     implementation("io.opentelemetry:opentelemetry-exporter-zipkin")
+    implementation("org.springframework.kafka:spring-kafka")
     runtimeOnly("org.postgresql:postgresql")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+    testImplementation("org.springframework.kafka:spring-kafka-test")
+    testImplementation("org.mockito.kotlin:mockito-kotlin:5.4.0")
     testRuntimeOnly("com.h2database:h2")
 }
 
